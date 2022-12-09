@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Adrien Davy">
+    <meta name="description" content="Tech Challenge">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact the Royal Kingdom">
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" href="crown.png" />
+    <title>Contact the Royal Kingdom</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><img src="logov2.svg" alt="logo" title="Home" id="logo"/></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="royal-family.html">Royal Family</a></li>
+          <li><a href="assets.html">Royal Assets</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+      <main id="maincontact"/>
+        <h1 class="h1contact">Contact the Royal Kingdom</h1>
+    
+          <form action="traitement.php" method="POST" id="myForm">
+            <label for="Name">Name</label><br/>
+            <input type="text" name="Name" title="Type your name" id="pseudo"/><br/>
+
+            <label for="Email">Email</label><br/>
+            <input type="email" name="Email" title="Type your email" id="mail"/><br />
+
+        <label for="Message">Message</label><br/>
+        <textarea name="Message" title="Type your message" id="message" cols="40" rows="4"></textarea>
+        <br/>
+
+        <input type="submit" value="submit" name="Submit" id="submit" title="Click to send your message"/>
+      </form>
+      <p style="color: red;" id="error"></p>
+    </div>
+    <!-- Fin bloc page contact-->
+
+    <script src="script.js"></script>
+  </body>
+</html>
