@@ -32,7 +32,10 @@ body {
   background-image: url(bg.jpg);
   box-shadow: 5px 5px 15px 1px #003049;  
   height: 100%;
-  padding: 0 0 300px 0;
+  padding: 0 0 200px 0;
+}
+#bodyhome {
+  padding: 0;
 }
 
 #logo {
@@ -93,7 +96,7 @@ a {
   align-items: center;
   text-align: center;
   height: 30rem;
-  background: url("Luxe.jpg") no-repeat fixed 50% 50%;
+  background: url("bghome.jpg") no-repeat fixed 25% 25%;
   font-family: "bodoni_06ptbold", "Arial", "Helvetica", "sans-serif";
   color: #fff;
   text-shadow: 2px 2px 5px#003049;
@@ -241,12 +244,13 @@ tbody tr:nth-child(even) {
 
 #maincontact {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: flex-start;
   flex-direction: column;
   font-family: "bodoni_06ptregular", "Arial", "Helvetica", "sans-serif";
   font-size: 1.2em;
   text-align: left;
+  margin-left: 4%;
 }
 
 .h1contact {
@@ -263,6 +267,7 @@ tbody tr:nth-child(even) {
   width: 90%;
   border: 2px solid #003049;
   border-radius: 2px;
+  margin: 20px 0 20px 0;
 }
 
 #message {
@@ -270,6 +275,8 @@ tbody tr:nth-child(even) {
   height: 200px;
   border: 2px solid #003049;
   border-radius: 2px;
+  
+  margin: 20px 0 20px 0;
 }
 
 #submit {
