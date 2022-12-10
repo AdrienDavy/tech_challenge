@@ -25,13 +25,14 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 body {
   margin: 20px;
   background-image: url(bg.jpg);
-  box-shadow: 5px 5px 15px 1px #003049;
+  box-shadow: 5px 5px 15px 1px #003049;  
+  height: 100%;
+  padding: 0 0 300px 0;
 }
 
 #logo {
@@ -40,14 +41,12 @@ body {
   transition-duration: 180ms;
   transition-property: all;
   transition-timing-function: ease-in-out;
-  transform-origin: left;
-  padding: 5px;
 }
 
 #logo:hover {
   border-radius: 5px;
   background: rgba(214, 207, 203, 0.1);
-  box-shadow: 1px 1px 50px #fff;
+  box-shadow: 1px 1px 30px #fff;
 }
 
 nav {
@@ -67,25 +66,25 @@ ul {
   margin-left: 100px;
 }
 
-li {
-  list-style-type: none;
-}
 
-a {
-  text-decoration: none;
+li {
+  
   font-family: "montserrat_alternatesblack", "Arial", "Helvetica", "sans-serif";
   color: #fff;
   transition-duration: 120ms;
   transition-property: font-size;
   transition-timing-function: ease-in-out;
-  padding: 5px;
+  list-style-type: none;
+}
+
+li:hover {
+  font-size: larger;
 
 }
 
-a:hover {
-  font-size: larger;
-  box-shadow: #003049;
-
+a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .h1welcome {
@@ -141,9 +140,6 @@ p {
   justify-content: space-evenly;
   align-items: center;
   flex-flow: row wrap;
-  height: 100%;
-  padding: 0 0 300px 0;
-
 }
 
 figure {
@@ -191,34 +187,38 @@ figure:hover {
   }
 /* Assets */
 
-#royal_assets,
-#javelin {
-  font-family: "bodoni_06ptbold", "Arial", "Helvetica", "sans-serif";
-  text-align: left;
-  margin-left: 30%;
+#mainassests {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: column nowrap;
+  background-color: rgb(0, 48, 73);
 }
 
-#assets {
-  background-color: rgba(233, 237, 201, 0.6);
-  border: 5px solid black;
-  border-radius: 5px;
-  padding: 30px;
-  height: 5%;
+.h1assets {
+  padding: 30px 0 0 70px;
 }
 
 .tableau {
   border-collapse: collapse;
-  width: 40%;
-  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
+  width: 80%;
+  box-shadow: 5px 5px 30px rgba(44, 77, 126, 0.5);
   margin: 100px auto;
-  border: 2px solid black;
+  border: 2px solid #fff;
+  transition-duration: 200ms;
+  transition-property: box-shadow;
+  transition-timing-function: ease-in-out;
+}
+
+.tableau:hover {
+  box-shadow: 10px 10px 60px rgba(44, 77, 126, 0.8);
 }
 
 thead tr {
   font-family: "montserrat_alternatesblack", "Arial", "Helvetica", "sans-serif";
   font-size: 1.4em;
   background-color: #003049;
-  color: #eae2b7;
+  color: #fff;
   text-align: center;
 }
 th,
@@ -230,7 +230,7 @@ tbody tr,
 td,
 th {
   font-family: "montserrat_alternatesblack", "Arial", "Helvetica", "sans-serif";
-  border: 1px solid #1d3557;
+  border: 1px solid #fff;
 }
 
 tbody tr:nth-child(even) {
@@ -298,6 +298,6 @@ textarea {
 }
 
 #submit:hover {
-  color: royalblue;
+  color: #003049;
   cursor: pointer;
 }
