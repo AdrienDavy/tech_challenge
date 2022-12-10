@@ -239,19 +239,7 @@ tbody tr:nth-child(even) {
 /* Contact */
 
 
-
-#message {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#titre_contact {
-  margin-top: 25px;
-  padding: 10px;
-}
-
-#myForm {
+#maincontact {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -259,41 +247,34 @@ tbody tr:nth-child(even) {
   font-family: "bodoni_06ptregular", "Arial", "Helvetica", "sans-serif";
   font-size: 1.2em;
   text-align: left;
-  padding: 10px;
+}
+
+.h1contact {
+  margin: 50px;
+}
+
+#myForm {
+  padding: 0 0 0 50px;
+  width: 100%;
 }
 
 #pseudo,
 #mail {
   width: 90%;
-  border: 2px solid black;
+  border: 2px solid #003049;
   border-radius: 2px;
 }
 
 #message {
   width: 90%;
   height: 200px;
-  border: 2px solid black;
+  border: 2px solid #003049;
   border-radius: 2px;
 }
 
-#contact {
-  background-color: rgba(233, 237, 201, 0.6);
-  border: 3px solid black;
-  border-radius: 5px;
-  padding: 30px;
-  height: 5%;
-}
-
-textarea {
-  max-width: 90%;
-}
 #submit {
   font-size: 1em;
-  display: inline-block;
-  padding: 0.74em;
-  margin: 1em 0 0;
   color: #6b705c;
-  border-width: 0;
   border: 1px solid;
   text-transform: uppercase;
 }
