@@ -96,7 +96,7 @@ a {
   align-items: center;
   text-align: center;
   height: 30rem;
-  background: url("bghome.jpg") no-repeat fixed 25% 25%;
+  background: url("bghome.jpg") no-repeat fixed;
   font-family: "bodoni_06ptbold", "Arial", "Helvetica", "sans-serif";
   color: #fff;
   text-shadow: 2px 2px 5px#003049;
@@ -279,14 +279,27 @@ tbody tr:nth-child(even) {
   margin: 20px 0 20px 0;
 }
 
+#button {
+  display: flex;
+  width: 90%;
+  justify-content: flex-end;
+}
 #submit {
   font-size: 1em;
-  color: #6b705c;
-  border: 1px solid;
+  color: #003049;
+  border: 1px solid #003049;
+  border-radius: 5px;
   text-transform: uppercase;
+  transition-duration: 200ms;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  padding: 3px;
 }
 
 #submit:hover {
-  color: #003049;
+  color: #fff;
   cursor: pointer;
+  padding: 8px;
+  background-color: #003049;
+  border: 2px solid #fff;
 }

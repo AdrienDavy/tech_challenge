@@ -31,16 +31,17 @@
     
         <form action="traitement.php" method="POST" id="myForm">
           <label for="Name">Name</label><br/>
-          <input type="text" name="Name" title="Type your name" id="pseudo"/><br/>
+          <input type="text" name="Name" title="Put your name here" id="pseudo"/><br/>
 
           <label for="Email">Email</label><br/>
-          <input type="email" name="Email" title="Type your email" id="mail"/><br />
+          <input type="email" name="Email" title="Put your email adress here" id="mail"/><br />
 
           <label for="Message">Message</label><br/>
-          <textarea name="Message" title="Type your message" id="message" cols="40" rows="4"></textarea>
+          <textarea name="Message" placeholder=" Write your message here..." id="message" cols="40" rows="4"></textarea>
           <br/>
-
+          <div id="button">
           <input type="submit" value="submit" name="Submit" id="submit" title="Click to send your message"/>
+          </div>
         </form>
       <p style="color: red;" id="error"></p>
     </main>
