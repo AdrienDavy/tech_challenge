@@ -1,7 +1,7 @@
 @font-face {
   font-family: "montserrat_alternatesblack";
   src: url("montserratalternates-black.woff2") format("woff2"),
-    url("montserratalternates-black.woff") format("woff");
+  url("montserratalternates-black.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -9,7 +9,7 @@
 @font-face {
   font-family: "bodoni_06ptbold";
   src: url("bodoni-06-bold-webfont.woff2") format("woff2"),
-    url("bodoni-06-bold-webfont.woff") format("woff");
+  url("bodoni-06-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -17,7 +17,7 @@
 @font-face {
   font-family: "bodoni_06ptregular";
   src: url("bodoni-06-book-webfont.woff2") format("woff2"),
-    url("bodoni-06-book-webfont.woff") format("woff");
+  url("bodoni-06-book-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -34,6 +34,7 @@ body {
   height: 100%;
   padding: 0 0 200px 0;
 }
+
 #bodyhome {
   padding: 0;
 }
@@ -68,7 +69,6 @@ ul {
   width: 70%;
   margin-left: 100px;
 }
-
 
 li {
   
@@ -249,7 +249,6 @@ tbody tr:nth-child(even) {
 }
 
 /* Contact */
-
 
 #maincontact {
   display: flex;
