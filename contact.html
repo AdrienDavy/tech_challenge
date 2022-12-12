@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="author" content="Adrien Davy">
-    <meta name="description" content="Tech Challenge">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Contact the Royal Kingdom">
-    <link href="style.css" rel="stylesheet" />
-    <link rel="icon" href="crown.png" />
-    <title>Contact the Royal Kingdom</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Adrien Davy">
+  <meta name="description" content="Tech Challenge">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact the Royal Kingdom">
+  <link href="style.css" rel="stylesheet">
+  <link rel="icon" href="crown.png">
+  <title>Contact the Royal Kingdom</title>
+</head>
 
   <body>
     <header>
       <nav>
-        <a href="index.html"><img src="logowhite.png" alt="logo" title="Home" id="logo"/></a>
+        <a href="index.html"><img src="logowhite.png" alt="logo" title="Home" id="logo"></a>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="royal-family.html">Royal Family</a></li>
@@ -30,17 +30,17 @@
       <h1 class="h1contact">Contact the Royal Kingdom</h1>
     
         <form action="traitement.php" method="POST" id="myForm">
-          <label for="Name">Name</label><br/>
-          <input type="text" name="Name" title="Put your name here" id="pseudo"/><br/>
+          <label for="name">Name</label><br>
+          <input type="text" name="Name" title="Put your name here" id="name"><br>
 
-          <label for="Email">Email</label><br/>
-          <input type="email" name="Email" title="Put your email adress here" id="mail"/><br />
+          <label for="mail">Email</label><br>
+          <input type="email" name="Email" title="Put your email adress here" id="mail"><br>
 
-          <label for="Message">Message</label><br/>
+          <label for="message">Message</label><br>
           <textarea name="Message" placeholder=" Write your message here..." id="message" cols="40" rows="4"></textarea>
-          <br/>
+          <br>
           <div id="button">
-          <input type="submit" value="submit" name="Submit" id="submit" title="Click to send your message"/>
+          <input type="submit" value="submit" name="Submit" id="submit" title="Click to send your message">
           </div>
         </form>
       <p style="color: red;" id="error"></p>

@@ -115,6 +115,12 @@ h1 {
   font-family: "bodoni_06ptbold", "Arial", "Helvetica", "sans-serif";
 }
 
+#h2index {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #003049;
+}
+
 h2 {
   font-family: "bodoni_06ptbold", "Arial", "Helvetica", "sans-serif";
   color: #fff;
@@ -133,60 +139,62 @@ p {
 
 #mainfamily {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-direction: column;
+  font-family: "bodoni_06ptregular", "Arial", "Helvetica", "sans-serif";
+  font-size: 1.2em;
 }
 
 #h1family {
+  display: flex;
+  justify-content: flex-start;
   font-family: "bodoni_06ptbold", "Arial", "Helvetica", "sans-serif";
-  color: #003049;
-  margin: 50px;
-  padding: 30px 70% 0 5%;
+  color: #003049;  
+  padding: 50px;
+  width: 80%;
 }
+
+#figures {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
 figure {
-  margin: 0 80px 0 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #003049;    
+  background-color: #003049;
   transition-duration: 200ms;
-    transition-property: border;
-    transition-timing-function: ease-in-out;
-    box-shadow: 5px 5px 10px #003049;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
 }
 
 figure:hover {
-  border: 2px solid #003049;
-  border-radius: 5px;
-  background-color: rgba(142, 85, 114, 0.5);
-  
+  box-shadow: 5px 5px 30px #003049;
 }
 
 .family {
-    width: 280px;
-    border: 2px solid #fff;
-    border-radius: 5px;
-    font-size: 1.4em;
-    font-family: "bodoni_06ptbold", "Arial", "Helvetica", "sans-serif";
-    transition-duration: 200ms;
-    transition-property: all;
-    transition-timing-function: ease-in-out;
-    padding: 10px;
-    background-color: #003049;
-  }
-
-.family:hover {
-  width: 300px;
+  width: 280px;
+  font-size: 1.4em;
+  font-family: "bodoni_06ptbold", "Arial", "Helvetica", "sans-serif";
+  
+  border-radius: 10px;
 }
 
-  figcation {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2em;
-    color: #fff;
-    font-family: "bodoni_06ptbold", "Arial", "Helvetica", "sans-serif";
-    padding: 10px 0 5px 0;
-    background-color: #003049;
-  }
+figcaption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #003049;
+  height: 30px;
+}
+
 /* Assets */
 
 #mainassests {
@@ -199,13 +207,14 @@ figure:hover {
 
 .h1assets {
   padding: 30px 0 0 10%;
+  color: #003049;
 }
 
 .tableau {
   border-collapse: collapse;
   width: 80%;
   box-shadow: 5px 5px 30px rgba(44, 77, 126, 0.5);
-  margin: 100px auto;
+  margin: 50px auto;
   border: 2px solid #fff;
   transition-duration: 200ms;
   transition-property: box-shadow;
@@ -255,14 +264,16 @@ tbody tr:nth-child(even) {
 
 .h1contact {
   margin: 50px;
+  color: #003049;
 }
 
 #myForm {
   padding: 0 0 0 50px;
   width: 100%;
+  color: #003049;
 }
 
-#pseudo,
+#name,
 #mail {
   width: 90%;
   border: 2px solid #003049;
